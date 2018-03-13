@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fise.iot.mapper.TopicMapper">
+  <resultMap id="BaseResultMap" type="com.fise.iot.model.Topic">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="topic_url" jdbcType="VARCHAR" property="topicUrl" />
+    <result column="oper_auth" jdbcType="INTEGER" property="operAuth" />
+    <result column="message_num" jdbcType="INTEGER" property="messageNum" />
+    <result column="topic_desc" jdbcType="VARCHAR" property="topicDesc" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="updator" jdbcType="VARCHAR" property="updator" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>
